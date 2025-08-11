@@ -1,0 +1,57 @@
+nav {
+    height: 80px;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.GmSelectorContainer{
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 36);
+    border-radius: 15px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    
+}
+.GmSelectorContainer:hover{
+    scale: 106%;
+    margin-top: 10px;
+    background-color: rgb(35, 35, 43);
+}
+.GmSelectorImage{
+    width: 40px;
+}
+.CurrentGm{
+    display: flex;
+    position: absolute;
+    left: 48px;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(30, 30, 36);
+    width: 160px;
+    border-radius: 15px;
+    border: solid 1px rgb(255, 255, 255, 0.2);
+}
+.CurrentGmImg{
+    width: 40px;
+}
+.CurrentGmStatus{
+    margin-left: 10px;
+}
+.CurrentGmName{
+    color: white;
+    margin: 0px;
+    font-family: 'Geist', sans-serif;
+}
+.CurrentGmEnlisted {
+    color: white;
+    margin: 0px;
+    font-family: 'Geist', sans-serif;
+    
+}

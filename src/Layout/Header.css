@@ -17,8 +17,6 @@ header {
     margin-left: 10px;
     color: white;
     font-family: 'Geist', sans-serif;
-    user-select: none;
-    cursor: default;
 }
 .SearchInput {
     height: 25px;
