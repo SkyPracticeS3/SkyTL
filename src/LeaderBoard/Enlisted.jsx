@@ -1,15 +1,10 @@
 import './Enlisted.css'
 import { GmNameToImg } from '../Layout/Nav'
-import Sword from '../assets/Sword.png'
-import DiaPot from '../assets/DiaPot.webp'
-import NethPot from '../assets/NethPot.webp'
-import Crystal from '../assets/Crystal.png'
-import SMP from '../assets/SMP.webp'
-import Axe from '../assets/Axe.png'
-import UHC from '../assets/UHC.webp'
 import OverAll from '../assets/overall.svg'
 import { useContext } from 'react'
 import { TierDetailsContext } from '../App'
+
+import {Sword, DiaPot, NethPot, UHC, SMP, Crystal, Axe} from '../Layout/Nav'
 
 
 
@@ -33,7 +28,7 @@ export const Enlisted = (props) => {
         <div className='EnlistedTopThreeStyler' style={{backgroundColor : props.index < 3 ? BkImgByIndex[props.index] : 'none'}}>
             <h1 className='Place'>{props.index + 1 + '.'}</h1>
         </div>
-        <img className='EnlistedImage' src={'https://render.crafty.gg/3d/bust/' + props.guy.name}></img>
+        <img className='EnlistedImage' src={'https://render.crafty.gg/3d/bust/' + props.guy.name} loading='lazy'></img>
         <div className='EnlistedInfo'>
             <h2 className='EnlistedName'>{props.guy.name}</h2>
             <h3 className='EnlistedPerk'>{"Combat Enlisted"}</h3>

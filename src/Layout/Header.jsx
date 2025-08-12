@@ -9,5 +9,8 @@ export const Header = (props) => {
             <h1 className='Title'>SkyTiers</h1>
         </div>
         <input className='SearchInput' placeholder='Search'></input>
+        <div className='discordButtonContainer'>
+            <div className='discordButton'><a className='discordLink' href='https://discord.gg/Fb92ymJ63Y'>Discord</a></div>
+        </div>
     </header>
 };

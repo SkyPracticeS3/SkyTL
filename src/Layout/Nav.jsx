@@ -1,18 +1,21 @@
 import './Nav.css'
 import Sword from '../assets/Sword.png'
-import DiaPot from '../assets/DiaPot.webp'
+import DiaPot from '../assets/DiaPot.png'
 import NethPot from '../assets/NethPot.webp'
 import Crystal from '../assets/Crystal.png'
-import SMP from '../assets/SMP.webp'
+import SMP from '../assets/SMP.png'
 import Axe from '../assets/Axe.png'
 import UHC from '../assets/UHC.webp'
 import OverAll from '../assets/overall.svg'
+
+
+export { Sword, DiaPot, NethPot, Crystal, SMP, Axe, UHC };
 
 const GmSelector = (props) => {
     return <div className='GmSelectorContainer'
         onClick={() => {
             props.setCurrentGm({Gamemode:props.gm.Gamemode, Image: props.gm.Image})
-        }}><img src={props.gm.Image} className='GmSelectorImage'></img></div>
+        }}><div className='GmSelector'><img src={props.gm.Image} className='GmSelectorImage'></img></div></div>
 }
 
 export const GmNameToImg = Object.freeze({

@@ -28,7 +28,7 @@ export class EnlistedPerson {
     }
 };
 
-export const Main = () => {
+export const Main = (props) => {
     const People = [
         new EnlistedPerson("Swight", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 1),
         new EnlistedPerson("Katieey", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 2),
@@ -40,6 +40,7 @@ export const Main = () => {
     ];
     return <main>
         {
+            props.currentGm.Gamemode == "OverAll" &&
             People.map((guy, index)=>
                 <Enlisted guy={guy} index={index}></Enlisted>
             )

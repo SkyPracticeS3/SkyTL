@@ -6,7 +6,7 @@
     border: solid 1px rgb(255, 255, 255, 0.05);
     width: 350px;
     transform: translate(-50%, -50%);
-    height: 450px;
+    height: 380px;
     border-radius: 15px;
     z-index: 5;
     margin-left: -8px;
@@ -60,4 +60,31 @@
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
+}
+.tierDetailsCon{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.tierDetailCon{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    align-items: center;
+    background-color: rgb(25, 25, 32);
+    border-radius: 15px;
+    padding-top: 10px;
+    margin-left: 5px;
+    margin-top: 50px;
+}
+.tierDetailImg{
+    width: 40px;
+    height: 40px;
+}
+.personTier{
+    margin: 0px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Geist', sans-serif;
 }

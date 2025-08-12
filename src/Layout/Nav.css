@@ -7,9 +7,15 @@ nav {
     align-items: center;
 }
 .GmSelectorContainer{
+    margin-left: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 15px;
+    background-color: rgb(15, 15, 20);
+}
+.GmSelector{
     width: 60px;
     height: 60px;
-    margin-left: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,12 +23,14 @@ nav {
     border-radius: 15px;
     transition-duration: 0.2s;
     cursor: pointer;
-    
+    transform: translateY(-4px);
+    transition-duration: 0.15s;
 }
-.GmSelectorContainer:hover{
-    scale: 106%;
-    margin-top: 10px;
-    background-color: rgb(35, 35, 43);
+.GmSelector:hover{
+    transform: translateY(-6px);
+}
+.GmSelector:active{
+    transform: translateY(0px);
 }
 .GmSelectorImage{
     width: 40px;
