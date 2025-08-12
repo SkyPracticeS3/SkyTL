@@ -1,7 +1,7 @@
 import { Enlisted } from '../LeaderBoard/Enlisted';
 import './Main.css'
 
-const Tier = Object.freeze({
+export const Tier = Object.freeze({
     HT1 : 'HT1',
     LT1 : 'LT1',
     HT2 : 'HT2',
@@ -14,8 +14,8 @@ const Tier = Object.freeze({
     LT5 : 'LT5'
 });
 
-class EnlistedPerson {
-    constructor(name, Sword, Diapot, Nethpot, UHC, Crystal, SMP, Axe){
+export class EnlistedPerson {
+    constructor(name, Sword, Diapot, Nethpot, UHC, Crystal, SMP, Axe, Place = 0){
         this.name = name;
         this.Sword = Sword;
         this.DiaPot = Diapot;
@@ -24,18 +24,19 @@ class EnlistedPerson {
         this.Crystal = Crystal;
         this.SMP = SMP;
         this.Axe = Axe;
+        this.Place = Place
     }
 };
 
 export const Main = () => {
     const People = [
-        new EnlistedPerson("Swight", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1),
-        new EnlistedPerson("Katieey", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1),
-        new EnlistedPerson("HealingPotion", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1),
-        new EnlistedPerson("MightySaS", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1),
-        new EnlistedPerson("Xern", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1),
-        new EnlistedPerson("gatzox", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1),
-        new EnlistedPerson("NeonXStrik3r", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1)
+        new EnlistedPerson("Swight", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 1),
+        new EnlistedPerson("Katieey", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 2),
+        new EnlistedPerson("HealingPotion", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 3),
+        new EnlistedPerson("MightySaS", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 4),
+        new EnlistedPerson("Xern", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 5),
+        new EnlistedPerson("gatzox", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 6),
+        new EnlistedPerson("NeonXStrik3r", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 7)
     ];
     return <main>
         {

@@ -3,11 +3,15 @@ import { GmNameToImg } from '../Layout/Nav'
 import Sword from '../assets/Sword.png'
 import DiaPot from '../assets/DiaPot.webp'
 import NethPot from '../assets/NethPot.webp'
-import Crystal from '../assets/Crystal.webp'
+import Crystal from '../assets/Crystal.png'
 import SMP from '../assets/SMP.webp'
-import Axe from '../assets/Axe.webp'
+import Axe from '../assets/Axe.png'
 import UHC from '../assets/UHC.webp'
 import OverAll from '../assets/overall.svg'
+import { useContext } from 'react'
+import { TierDetailsContext } from '../App'
+
+
 
 
 const TierDisplay = (props) => {
@@ -15,13 +19,17 @@ const TierDisplay = (props) => {
 }
 
 export const Enlisted = (props) => {
+    const {getTierDetails, setTierDetails} = useContext(TierDetailsContext)
+    console.log(getTierDetails);
     const BkImgByIndex = [
         'rgb(212, 175, 55)',
         'silver',
         'rgb(205, 127, 50)'
 
     ]
-    return <div className='EnlistedContainer'>
+    return <div className='EnlistedContainer' onClick={()=>{
+        setTierDetails({visible: true, person: props.guy})
+    }}>
         <div className='EnlistedTopThreeStyler' style={{backgroundColor : props.index < 3 ? BkImgByIndex[props.index] : 'none'}}>
             <h1 className='Place'>{props.index + 1 + '.'}</h1>
         </div>
