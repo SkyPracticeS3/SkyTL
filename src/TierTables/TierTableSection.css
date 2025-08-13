@@ -1,0 +1,57 @@
+.TierTableSection {
+    width: 18%;
+    height: calc(100% - 40px);
+    border-radius: 15px;
+    margin-left: 1.7%;
+    margin-top: 20px;
+    background-color: rgb(25, 25, 30);
+}
+.TierTableSectionHeader{
+    width: 100%;
+    text-align: center;
+    font-family: 'Geist', sans-serif;
+    color: whitesmoke;
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px rgb(255, 255, 255, 0.1);
+}
+.TierTableSectionGuy{
+    width: calc(100%);
+    line-height: 50px;
+    font-family: 'Geist', sans-serif;
+    color: white;
+    height: 50px;
+    border-bottom: solid 1px rgb(255, 255, 255, 0.1);
+    overflow: hidden;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.TierTableSectionGuy:hover{
+    background-color: rgb(30, 30 ,36);
+}
+.regionIndicator{
+    background-color: lightgreen;
+    height: 35px;
+    line-height: 35px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    width: 37px;
+    margin-left: -30px;
+    clip-path: inset(0 0 0 30px);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.guyName {
+    margin: 0px;
+    margin-left: 10px;
+}
+.guyHead{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
