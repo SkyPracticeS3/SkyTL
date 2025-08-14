@@ -15,6 +15,12 @@
     height: 50px;
     line-height: 50px;
     border-bottom: solid 1px rgb(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.TierTableSectionHeaderText{
+    margin: 0px;
 }
 .TierTableSectionGuy{
     width: calc(100%);
@@ -54,4 +60,23 @@
     width: 40px;
     height: 40px;
     margin-left: 15px;
+}
+.TierTableTrophy{
+    width: 30px;
+    margin-right: 5px;
+}
+.lowSection{
+    width: calc(100%);
+    line-height: 50px;
+    font-family: 'Geist', sans-serif;
+    color: white;
+    height: 50px;
+    border-bottom: solid 1px rgb(255, 255, 255, 0.1);
+    overflow: hidden;
+    overflow-x: hidden;
+    display: flex;
+    background-color: rgb(30, 30, 35);
+    align-items: center;
+    transition-duration: 0.3s;
+    cursor: pointer;
 }

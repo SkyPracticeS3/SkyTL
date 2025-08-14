@@ -15,7 +15,6 @@ const TierDisplay = (props) => {
 
 export const Enlisted = (props) => {
     const {getTierDetails, setTierDetails} = useContext(TierDetailsContext)
-    console.log(getTierDetails);
     const BkImgByIndex = [
         'rgb(212, 175, 55)',
         'silver',
@@ -25,8 +24,8 @@ export const Enlisted = (props) => {
     return <div className='EnlistedContainer' onClick={()=>{
         setTierDetails({visible: true, person: props.guy})
     }}>
-        <div className='EnlistedTopThreeStyler' style={{backgroundColor : props.index < 3 ? BkImgByIndex[props.index] : 'none'}}>
-            <h1 className='Place'>{props.index + 1 + '.'}</h1>
+        <div className='EnlistedTopThreeStyler' style={{backgroundColor : props.index - 1 < 3 ? BkImgByIndex[props.index - 1] : 'none'}}>
+            <h1 className='Place'>{props.index + '.'}</h1>
         </div>
         <img className='EnlistedImage' src={'https://render.crafty.gg/3d/bust/' + props.guy.name} loading='lazy'></img>
         <div className='EnlistedInfo'>

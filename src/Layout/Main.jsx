@@ -1,3 +1,4 @@
+import { createContext, useEffect } from 'react';
 import { Enlisted } from '../LeaderBoard/Enlisted';
 import { TierTable } from '../TierTables/TierTable';
 import './Main.css'
@@ -52,26 +53,19 @@ export class EnlistedPerson {
     }
 };
 
+
 export const Main = (props) => {
-    const People = [
-        new EnlistedPerson("Swight", Tier.HT1, Tier.HT4, Tier.HT3, Tier.HT5, Tier.HT4, Tier.LT1, Tier.HT1, 1),
-        new EnlistedPerson("Katieey", Tier.HT1, Tier.LT2, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 2),
-        new EnlistedPerson("HealingPotion", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 3),
-        new EnlistedPerson("MightySaS", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 4),
-        new EnlistedPerson("Xern", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 5),
-        new EnlistedPerson("gatzox", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 6),
-        new EnlistedPerson("NeonXStrik3r", Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, Tier.HT1, 7)
-    ];
+
     return <main>
         {
             props.currentGm.Gamemode == "OverAll" &&
-            People.map((guy, index)=>
-                <Enlisted guy={guy} index={index}></Enlisted>
+            Array.isArray(props.people) && props.people.map((guy, index)=>
+                <Enlisted guy={guy} index={guy.Place}></Enlisted>
             )
         }
         {
-            props.currentGm.Gamemode != "OverAll" &&
-            <TierTable people={People} gm={props.currentGm.Gamemode}></TierTable>
+            props.currentGm.Gamemode != "OverAll" && Array.isArray(props.people) &&
+            <TierTable people={props.people} gm={props.currentGm.Gamemode}></TierTable>
         }
     </main>
 }
