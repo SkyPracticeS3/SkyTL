@@ -36,7 +36,7 @@ export const regionTxtColor = {
 export const Enlisted = (props) => {
     const {getTierDetails, setTierDetails} = useContext(TierDetailsContext)
     const BkImgByIndex = [
-        'linear-gradient(to right, red, orange, yellow, green, blue, indigo, Violet, indigo, blue, green, yellow, red,  orange)',
+        'linear-gradient(to right, red, orange, yellow, green, blue, indigo,  Violet, indigo, red, orange, yellow, green, blue, indigo,  Violet, indigo, red)',
         'linear-gradient(to right, silver, #71706E, silver, rgb(192, 192, 192)',
         'linear-gradient(to right, #804A00, #CD7F32, #DAAA5E)'
 
