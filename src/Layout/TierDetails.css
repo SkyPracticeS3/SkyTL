@@ -6,13 +6,14 @@
     border: solid 1px rgb(255, 255, 255, 0.05);
     width: 350px;
     transform: translate(-50%, -50%);
-    height: 380px;
+    height: 450px;
     border-radius: 15px;
     z-index: 5;
     margin-left: -8px;
 }
 .headImg{
     width: 100px;
+    filter: drop-shadow(-5px 0px 10px rgb(0, 0, 0, 0.6));
 }
 .closeMark{
     width: 50px;
@@ -75,7 +76,7 @@
     border-radius: 15px;
     padding-top: 10px;
     margin-left: 5px;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 .tierDetailImg{
     width: 40px;
@@ -87,4 +88,69 @@
     margin-bottom: 10px;
     color: white;
     font-family: 'Geist', sans-serif;
+}
+.tierPlaceCrown{
+    width: 40px;
+    margin-left: 2px;
+}
+.tierPlaceCon{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    background-color: rgb(25, 25, 32);
+    border-radius: 4px;
+    border: solid 1px rgb(255, 255, 255, 0.1);
+    justify-content: center;
+}
+.tierPlaceDectorator{
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(212, 175, 55);
+    border-radius: 4px;
+    clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 0% 100%);
+}
+.tierPlaceText{
+    margin: 0px;
+    font-size: 25px;
+    font-family: 'Geist', sans-serif;
+    margin-left: 10px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+.tierPlacePoints{
+    margin: 0px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-family: 'Geist', sans-serif;
+    color: white;
+}
+.tierRegion{
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Geist', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+.tierPlacePointsIndicator{
+    margin: 0px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-family: 'Geist', sans-serif;
+    color: white;
+}
+.tierPlacePointsCon{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

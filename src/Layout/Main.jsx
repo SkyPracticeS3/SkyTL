@@ -27,7 +27,7 @@ export const Region = Object.freeze({
 })
 
 export class EnlistedPerson {
-    constructor(name, Sword, Diapot, Nethpot, UHC, Crystal, SMP, Axe, Place = 0, region = Region.EU){
+    constructor(name, Sword, Diapot, Nethpot, UHC, Crystal, SMP, Axe, Place = 0, region = Region.EU, points = 1000){
         this.name = name;
         this.Sword = Sword;
         this.DiaPot = Diapot;
@@ -38,6 +38,7 @@ export class EnlistedPerson {
         this.Axe = Axe;
         this.Place = Place
         this.region = region
+        this.Points = points
     };
     getGm(gmName) {
         switch(gmName){
